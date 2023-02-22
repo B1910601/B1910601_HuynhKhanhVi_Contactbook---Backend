@@ -100,7 +100,7 @@ exports.delete = async (req, res, next) => {
     return res.send({ message: "Contact was deleted successfully" });
   } catch (error) {
     return next(
-        new ApiError(500, `Could dalete contact with id=${req.params.id}`)
+        new ApiError(500, `Could delete contact with id=${req.params.id}`)
       );
   }
 };
